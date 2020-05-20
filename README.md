@@ -1,7 +1,7 @@
 # Bar Restaurant App
 An app for helping users find and save their favorite bars and restaurants in St. Louis, Missouri. 
 
-## Usability 
+## Usage
 * Home page with St. Louis Map, Explore, Near Me, and Bookmarks
 * Shows map centered on current location, 2 buttons on top- restaurants and locations- tapping buttons show associated red location markers
 * Click on marker on restaurant-map and pops up a picture, ability to rate restaurant (empty 5 stars if not rated yet), a short description, Menu, and Bookmark/Remove
