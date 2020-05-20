@@ -1,4 +1,4 @@
-# bar_restaurant_app
+# Bar Restaurant App
 An app for helping users find and save their favorite bars and restaurants in St. Louis, Missouri. 
 
 # Usability 
