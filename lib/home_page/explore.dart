@@ -8,9 +8,10 @@ import '../bookmark_page/bm_handler.dart';
  */
 
 class Explore extends StatelessWidget {
-  final List<Map<String, Object>> data;
+  final List<Map<String, Object>> barData;
+  final List<Map<String, Object>> restaurantData;
   final BookmarkHandler bmHandler;
-  const Explore(this.data, this.bmHandler);
+  const Explore(this.barData, this.restaurantData, this.bmHandler);
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +25,7 @@ class Explore extends StatelessWidget {
               onTap: (){
                 Navigator.push(
                   context,
-                MaterialPageRoute(builder: (context) => LocationPage(data, bmHandler)), 
+                MaterialPageRoute(builder: (context) => LocationPage(barData, restaurantData, bmHandler)), 
                 );
               },
               leading: Image.asset('assets/images/explore.png', height: 100, width: 80),

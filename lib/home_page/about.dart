@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:katy_trail_app/bookmark_page/bm_handler.dart';
+import '../bookmark_page/bm_handler.dart';
 import '../about_page/about_page.dart';
 
 /*

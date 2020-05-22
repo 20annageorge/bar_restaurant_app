@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:katy_trail_app/bookmark_page/bm_handler.dart';
-import 'package:katy_trail_app/bookmark_page/bookmarks.dart';
+import '../bookmark_page/bm_handler.dart';
+import '../bookmark_page/bookmarks.dart';
 import './text_section.dart';
 
 /*

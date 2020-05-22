@@ -9,14 +9,19 @@ import '../bookmark_page/bookmarks.dart';
  */
 
 class LocationPage extends StatelessWidget {
-  final List<Map<String, Object>> data;
+  final List<Map<String, Object>> barData;
+  final List<Map<String, Object>> restaurantData;
   final BookmarkHandler bmHandler;
-  LocationPage(this.data, this.bmHandler);
+  LocationPage(this.barData, this.restaurantData, this.bmHandler);
 
   @override
   Widget build(BuildContext context) {
     var locationCards = List<LocationListCard>();
-    for (var location in data) {
+    for (var location in barData) {
+      var newLocationCard = LocationListCard(location, bmHandler);
+      locationCards.add(newLocationCard);
+    }
+    for (var location in restaurantData) {
       var newLocationCard = LocationListCard(location, bmHandler);
       locationCards.add(newLocationCard);
     }

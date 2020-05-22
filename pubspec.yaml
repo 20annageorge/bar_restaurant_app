@@ -22,11 +22,9 @@ dependencies:
   bmnav: ^0.3.4
   flutter_map:
   geolocator: ^5.3.0
-  google_maps_util:
-  google_map_polyutil: ^1.0.0
   flutter_launcher_name: ^0.0.1
   flutter_local_notifications: ^1.4.0
-  path_provider: ^1.6.5
+  path_provider: ^1.6.5 
   location_permissions: ^2.0.5
   
   # iOS Icons and Fonts
@@ -52,21 +50,14 @@ flutter:
     - assets/images/map.png
     - assets/images/explore.png
     - assets/images/about.png
-    - assets/images/location.png
     - assets/images/noimage.png
   # General Photographs
-    - assets/images/katy_trail.png
-  # Location Images
-    - assets/images/FCapital1.png
-    - assets/images/FCapital2.png
-    - assets/images/Augusta.png
-    - assets/images/MKT.png
-    - assets/images/PilotGrove.png
-    - assets/images/LUlogo.png
-    - assets/images/Missouri.png
+
+  # Bar Location Images
+    - assets/images/bar-images/Fireplace-Bar.jpg
+  # Restaurant Location Images
+    - assets/images/restaurant-images/La-Bonne-Bouchee.jpg
   # Cropped Images
-    - assets/images/cropped/Augusta_cropped.jpg
-    - assets/images/cropped/FCapital_cropped.jpg
-    - assets/images/cropped/MKT_cropped.jpg
-    - assets/images/cropped/Pilotgrove_cropped.jpg
+    - assets/images/cropped/Fireplace-Bar-Cropped.jpg
+    - assets/images/cropped/La-Bonne-Bouchee-Cropped.jpg
 

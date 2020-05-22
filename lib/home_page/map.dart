@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:katy_trail_app/push_handler.dart';
 import '../map_page/maps.dart';
 import '../bookmark_page/bm_handler.dart';
+import '../push_handler.dart';
 
 /*
  * MapW is the home page card that navigates to the maps page when tapped. 
@@ -9,10 +9,11 @@ import '../bookmark_page/bm_handler.dart';
  */
 
 class MapW extends StatelessWidget {
-  final List<Map<String, Object>> data;
+  final List<Map<String, Object>> barData;
+  final List<Map<String, Object>> restaurantData;
   final BookmarkHandler bmHandler;
   final PushHandler pushHandler;
-  const MapW(this.data, this.bmHandler, this.pushHandler);
+  const MapW(this.barData, this.restaurantData, this.bmHandler, this.pushHandler);
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +27,7 @@ class MapW extends StatelessWidget {
               onTap: (){
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => MapPage(data, bmHandler, pushHandler)),
+                  MaterialPageRoute(builder: (context) => MapPage(barData, restaurantData, bmHandler, pushHandler)),
                 );
               },
               leading: Container(
