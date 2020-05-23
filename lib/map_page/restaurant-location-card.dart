@@ -12,18 +12,17 @@ import '../bookmark_page/bm_handler.dart';
  * the text with "Bookmark"
  */
 
-class LocationCard extends StatefulWidget {
+class RestaurantLocationCard extends StatefulWidget {
   final Map<String, Object> locDetails;
-  final List<Map<String, Object>> barData;
   final List<Map<String, Object>> restaurantData;
   final BookmarkHandler bmHandler;
-  LocationCard(this.locDetails, this.barData, this.restaurantData, this.bmHandler);
+  RestaurantLocationCard(this.locDetails, this.restaurantData, this.bmHandler);
 
   @override
-  _LocationCardState createState() => _LocationCardState();
+  _RestaurantLocationCardState createState() => _RestaurantLocationCardState();
 }
 
-class _LocationCardState extends State<LocationCard> {
+class _RestaurantLocationCardState extends State<RestaurantLocationCard> {
   Function bmAction;
 
   @override
@@ -61,14 +60,14 @@ class _LocationCardState extends State<LocationCard> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Image.asset(
-                  'assets/images/cropped/${widget.locDetails["barCroppedImage"]}',
+                  'assets/images/cropped/${widget.locDetails["restaurantCroppedImage"]}',
                   height: 50,
                   width: 50,
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 10.0, left: 10.0),
                   child: Text(
-                    widget.locDetails["barName"],
+                    widget.locDetails["restaurantName"],
                     style: TextStyle(fontSize: 25),
                   ),
                 ),
@@ -82,7 +81,7 @@ class _LocationCardState extends State<LocationCard> {
                 Padding(
                   padding: const EdgeInsets.only(top: 20.0),
                   child: Text(
-                    widget.locDetails["barDescription"],
+                    widget.locDetails["restaurantDescription"],
                     style: TextStyle(color: Colors.grey[700], fontSize: 16),
                   ),
                 ),

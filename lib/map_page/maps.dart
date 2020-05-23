@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import '../bookmark_page/bookmarks.dart';
 import 'package:latlong/latlong.dart';
-import './location-card.dart';
+import './bar-location-card.dart';
+import './restaurant-location-card.dart';
 import '../bookmark_page/bm_handler.dart';
 import '../push_handler.dart';
 
@@ -32,12 +33,23 @@ class _MapPageState extends State<MapPage> {
 
   @override
   Widget build(BuildContext context) {
-    _showLocationCard(context, Map<String, Object> locData) {
+    _showBarLocationCard(context, Map<String, Object> locData) {
       showModalBottomSheet(
         context: context,
         builder: (BuildContext context) {
-          return LocationCard(
-            locData, widget.dataPointsColBar, widget.dataPointsColRestaurant, widget.bmHandler
+          return BarLocationCard(
+            locData, widget.dataPointsColBar, widget.bmHandler
+          );
+        }
+      );
+    }
+
+    _showRestaurantLocationCard(context, Map<String, Object> locData) {
+      showModalBottomSheet(
+        context: context,
+        builder: (BuildContext context) {
+          return RestaurantLocationCard(
+            locData, widget.dataPointsColRestaurant, widget.bmHandler
           );
         }
       );
@@ -45,7 +57,7 @@ class _MapPageState extends State<MapPage> {
 
     var locationPlaces = List<Marker>();
     for (var location in widget.dataPointsColBar) {
-      // Create marker widget for each location
+          // Create marker widget for each location
           var temp = new Marker(
           width: 45.0,
           height: 45.0,
@@ -56,7 +68,7 @@ class _MapPageState extends State<MapPage> {
               color: Colors.black,
               iconSize: 45.0,
               onPressed: () {
-                _showLocationCard(context, location);
+                _showBarLocationCard(context, location);
                 print("Location: " + location["barName"] + " was tapped.");
               },
             ),
@@ -78,7 +90,7 @@ class _MapPageState extends State<MapPage> {
             color: Colors.black,
             iconSize: 45.0,
             onPressed: () {
-              _showLocationCard(context, location);
+              _showRestaurantLocationCard(context, location);
               print("Location: " + location["restaurantName"] + " was tapped.");
             },
           ),

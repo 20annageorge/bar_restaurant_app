@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: new AppBar(title: Text("Katy Trail Home"),
+      appBar: new AppBar(title: Text("Bar & Restaurant Home"),
         actions: <Widget>[ 
           IconButton(
             icon: Icon(

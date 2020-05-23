@@ -13,6 +13,8 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
+
     // Lock app's orientation on portrait mode 
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitUp,
@@ -20,9 +22,9 @@ class MyApp extends StatelessWidget {
     ]);
     return MaterialApp(
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
-      home: MyHomePage(title: 'Bar & Restaurant App'),
+      home: MyHomePage(title: 'Bar & Restaurant Home'),
     );
   }
 }
