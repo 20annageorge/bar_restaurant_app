@@ -28,7 +28,7 @@ class About extends StatelessWidget {
               },
               leading: Image.asset('assets/images/about.png', height: 100, width: 80),
               title: Text('About'),
-              subtitle: Text('Learn about the Katy Trail and this project'),
+              subtitle: Text('Learn about St. Louis history'),
             )
           ],
         )

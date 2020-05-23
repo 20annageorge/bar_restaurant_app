@@ -36,7 +36,7 @@ class MapW extends StatelessWidget {
               ),
               //leading: 
               title: Text('Map'),
-              subtitle: Text('See the Katy Trail on maps and find locations'), 
+              subtitle: Text('See bars and restaurants in St. Louis'), 
             )
           ],
         )

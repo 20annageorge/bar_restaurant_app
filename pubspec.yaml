@@ -55,9 +55,27 @@ flutter:
 
   # Bar Location Images
     - assets/images/bar-images/Fireplace-Bar.jpg
+    - assets/images/bar-images/Little-Jamaica.jpg
+    - assets/images/bar-images/Big-As.jpg
+    - assets/images/bar-images/Drinking-Horn.jpg
   # Restaurant Location Images
     - assets/images/restaurant-images/La-Bonne-Bouchee.jpg
+    - assets/images/restaurant-images/Perfect-Taste.jpg
+    - assets/images/restaurant-images/Wei-Hong.jpg
+    - assets/images/restaurant-images/HuHot.jpg
+    - assets/images/restaurant-images/Troy.jpg
+    - assets/images/restaurant-images/Nippon-Tei.jpg
+    - assets/images/restaurant-images/Himalayan-Yeti.jpg
+    - assets/images/restaurant-images/Everest.png
   # Cropped Images
-    - assets/images/cropped/Fireplace-Bar-Cropped.jpg
+    - assets/images/cropped/Fireplace-Bar-Cropped.jpg 
     - assets/images/cropped/La-Bonne-Bouchee-Cropped.jpg
-
+    - assets/images/cropped/Wei-Hong-Cropped.jpg
+    - assets/images/cropped/HuHot-Cropped.jpg
+    - assets/images/cropped/Troy-Cropped.jpg
+    - assets/images/cropped/Nippon-Tei-Cropped.jpg
+    - assets/images/cropped/Himalayan-Yeti-Cropped.jpg
+    - assets/images/cropped/Everest-Cropped.png
+    - assets/images/cropped/Little-Jamaica-Cropped.jpg
+    - assets/images/cropped/Big-As-Cropped.jpg
+    - assets/images/cropped/Drinking-Horn-Cropped.jpg

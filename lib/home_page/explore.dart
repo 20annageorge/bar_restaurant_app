@@ -30,7 +30,7 @@ class Explore extends StatelessWidget {
               },
               leading: Image.asset('assets/images/explore.png', height: 100, width: 80),
               title: Text('Explore'),
-              subtitle: Text('Learn about all locations on the Katy Trail'),
+              subtitle: Text('Check out bars and restaurants near you'),
             )
           ],
         )
